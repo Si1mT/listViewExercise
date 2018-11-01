@@ -460,20 +460,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\opilane\\.nuget\\packages\\": {}
+    "C:\\Users\\SIIM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Documents\\Visual Studio 2017\\Projects\\ListViewExercise\\ListViewExercise\\ListViewExercise.csproj",
+      "projectUniqueName": "C:\\Users\\SIIM\\Documents\\GitHub\\listViewExercise\\ListViewExercise\\ListViewExercise.csproj",
       "projectName": "ListViewExercise",
-      "projectPath": "C:\\Users\\opilane\\Documents\\Visual Studio 2017\\Projects\\ListViewExercise\\ListViewExercise\\ListViewExercise.csproj",
-      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Documents\\Visual Studio 2017\\Projects\\ListViewExercise\\ListViewExercise\\obj\\",
+      "projectPath": "C:\\Users\\SIIM\\Documents\\GitHub\\listViewExercise\\ListViewExercise\\ListViewExercise.csproj",
+      "packagesPath": "C:\\Users\\SIIM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SIIM\\Documents\\GitHub\\listViewExercise\\ListViewExercise\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SIIM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

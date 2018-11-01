@@ -2387,6 +2387,9 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
 			
+			// aapt resource value: 0x7F010010
+			public const int button_comments = 2130771984;
+			
 			// aapt resource value: 0x7F0C001C
 			public const int cancel_action = 2131492892;
 			
@@ -2474,6 +2477,9 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
+			// aapt resource value: 0x7F010005
+			public const int imageView_profilePicture = 2130771973;
+			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
 			
@@ -2494,6 +2500,15 @@ namespace ListViewExercise
 			
 			// aapt resource value: 0x7F0C000F
 			public const int line3 = 2131492879;
+			
+			// aapt resource value: 0x7F010003
+			public const int linearLayout1 = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int linearLayout2 = 2130771972;
+			
+			// aapt resource value: 0x7F010009
+			public const int linearLayout3 = 2130771977;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
@@ -2686,6 +2701,15 @@ namespace ListViewExercise
 			
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
+			
+			// aapt resource value: 0x7F010007
+			public const int textView_date = 2130771975;
+			
+			// aapt resource value: 0x7F010006
+			public const int textView_Name = 2130771974;
+			
+			// aapt resource value: 0x7F010008
+			public const int textView_text = 2130771976;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;

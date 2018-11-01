@@ -2801,11 +2801,11 @@ namespace ListViewExercise
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f08008f
-			public const int textView_Name = 2131230863;
-			
 			// aapt resource value: 0x7f080090
 			public const int textView_date = 2131230864;
+			
+			// aapt resource value: 0x7f08008f
+			public const int textView_name = 2131230863;
 			
 			// aapt resource value: 0x7f080091
 			public const int textView_text = 2131230865;

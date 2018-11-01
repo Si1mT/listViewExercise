@@ -3105,8 +3105,8 @@ containing a value of this type.
         public static final int text2=0x7f08001b;
         public static final int textSpacerNoButtons=0x7f08006a;
         public static final int textSpacerNoTitle=0x7f080069;
-        public static final int textView_Name=0x7f08008f;
         public static final int textView_date=0x7f080090;
+        public static final int textView_name=0x7f08008f;
         public static final int textView_text=0x7f080091;
         public static final int text_input_password_toggle=0x7f0800a1;
         public static final int textinput_counter=0x7f080014;

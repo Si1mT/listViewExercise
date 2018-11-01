@@ -891,8 +891,8 @@ int id text 0x7f08001a
 int id text2 0x7f08001b
 int id textSpacerNoButtons 0x7f08006a
 int id textSpacerNoTitle 0x7f080069
-int id textView_Name 0x7f08008f
 int id textView_date 0x7f080090
+int id textView_name 0x7f08008f
 int id textView_text 0x7f080091
 int id text_input_password_toggle 0x7f0800a1
 int id textinput_counter 0x7f080014

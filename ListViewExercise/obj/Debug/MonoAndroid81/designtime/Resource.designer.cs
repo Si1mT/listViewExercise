@@ -2706,7 +2706,7 @@ namespace ListViewExercise
 			public const int textView_date = 2130771975;
 			
 			// aapt resource value: 0x7F010006
-			public const int textView_Name = 2130771974;
+			public const int textView_name = 2130771974;
 			
 			// aapt resource value: 0x7F010008
 			public const int textView_text = 2130771976;

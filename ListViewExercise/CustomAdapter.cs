@@ -50,8 +50,9 @@ namespace ListViewExercise
             if (view == null)
                 view = context.LayoutInflater.Inflate(Resource.Layout.custom_row, null);
 
-            //view.FindViewById<TextView>(Resource.Id.textView_Name).Text = posts[position];
-            view.FindViewById<TextView>(Resource.Id.).Text = posts[position].Name;
+            view.FindViewById<TextView>(Resource.Id.textView_name).Text = posts[position].Name;
+            view.FindViewById<TextView>(Resource.Id.textView_date).Text = posts[position].Date;
+            view.FindViewById<TextView>(Resource.Id.textView_text).Text = posts[position].PostText;
 
             return view;
         }

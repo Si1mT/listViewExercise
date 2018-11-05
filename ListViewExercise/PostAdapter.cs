@@ -12,12 +12,12 @@ using Android.Widget;
 
 namespace ListViewExercise
 {
-    class CustomAdapter : BaseAdapter<Facebook>
+    class PostAdapter : BaseAdapter<Facebook>
     {
         List<Facebook> posts;
         Activity context;
 
-        public CustomAdapter(Activity context, List<Facebook> posts) : base()
+        public PostAdapter(Activity context, List<Facebook> posts) : base()
         {
             this.posts = posts;
             this.context = context;
@@ -57,22 +57,6 @@ namespace ListViewExercise
             view.FindViewById<TextView>(Resource.Id.textView_text).Text = posts[position].PostText;
             view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes+" Likes";
 
-            //imageBtn.Click += (sender, e) =>
-            //{
-            //    switch (liked)
-            //    {
-            //        case false:
-            //            posts[position].Likes++;
-            //            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
-            //            liked = true;
-            //            break;
-            //        case true:
-            //            posts[position].Likes--;
-            //            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
-            //            liked = false;
-            //            break;
-            //    }
-            //};
             imageButton_Like.Click += (sender, e) =>
              {
                  switch (liked)

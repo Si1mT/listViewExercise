@@ -1,7 +1,7 @@
 package md5bfec9347d6f8f68724b5f527bc382411;
 
 
-public class CustomAdapter
+public class PostAdapter
 	extends android.widget.BaseAdapter
 	implements
 		mono.android.IGCUserPeer
@@ -15,15 +15,15 @@ public class CustomAdapter
 			"n_getItemId:(I)J:GetGetItemId_IHandler\n" +
 			"n_getView:(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;:GetGetView_ILandroid_view_View_Landroid_view_ViewGroup_Handler\n" +
 			"";
-		mono.android.Runtime.register ("ListViewExercise.CustomAdapter, ListViewExercise", CustomAdapter.class, __md_methods);
+		mono.android.Runtime.register ("ListViewExercise.PostAdapter, ListViewExercise", PostAdapter.class, __md_methods);
 	}
 
 
-	public CustomAdapter ()
+	public PostAdapter ()
 	{
 		super ();
-		if (getClass () == CustomAdapter.class)
-			mono.android.TypeManager.Activate ("ListViewExercise.CustomAdapter, ListViewExercise", "", this, new java.lang.Object[] {  });
+		if (getClass () == PostAdapter.class)
+			mono.android.TypeManager.Activate ("ListViewExercise.PostAdapter, ListViewExercise", "", this, new java.lang.Object[] {  });
 	}
 
 

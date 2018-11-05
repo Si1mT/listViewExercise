@@ -56,7 +56,10 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomAdapter.cs" />
+    <Compile Include="Comment.cs" />
+    <Compile Include="CommentActivity.cs" />
+    <Compile Include="CommentAdapter.cs" />
+    <Compile Include="PostAdapter.cs" />
     <Compile Include="Facebook.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -106,6 +109,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\comment_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\comment_row.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

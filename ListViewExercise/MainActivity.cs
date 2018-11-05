@@ -24,10 +24,10 @@ namespace ListViewExercise
 
             List<Facebook> postList = new List<Facebook>() {
                 new Facebook(){Name="Bob",PostText="Jim please stop",Date="1. april,12:21",Likes=0},
-                new Facebook(){Name="Jim",PostText="| | || |_",Date="1. april,12:00", Likes=0}
+                new Facebook(){Name="Jim",PostText="| ||\n || |_",Date="1. april,12:00", Likes=0}
             };
 
-            list.Adapter = new CustomAdapter(this, postList);
+            list.Adapter = new PostAdapter(this, postList);
         }
     }
 }

@@ -32,6 +32,7 @@ C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\Mo
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\res\layout\custom_row.xml
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\res\drawable\like.png
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\res\layout\comment_layout.xml
+C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\res\layout\comment_row.xml
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\R.cs.flag
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\R.txt
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\uploadflags.txt
@@ -57,7 +58,6 @@ C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\Mo
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\linksrc\System.ServiceModel.Internals.pdb
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\linksrc\Mono.Security.pdb
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\ListViewExercise.csprojAssemblyReference.cache
-C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\res\layout\comment_row.xml
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\ListViewExercise.pdb
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\Mono.Android.pdb
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\Mono.Security.pdb

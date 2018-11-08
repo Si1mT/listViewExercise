@@ -2983,7 +2983,6 @@ containing a value of this type.
         public static final int blocking=0x7f080057;
         public static final int bottom=0x7f08003d;
         public static final int buttonPanel=0x7f080063;
-        public static final int button_comments=0x7f080099;
         public static final int cancel_action=0x7f0800ac;
         public static final int center=0x7f080045;
         public static final int center_horizontal=0x7f080046;
@@ -3109,6 +3108,7 @@ containing a value of this type.
         public static final int text2=0x7f08001b;
         public static final int textSpacerNoButtons=0x7f08006a;
         public static final int textSpacerNoTitle=0x7f080069;
+        public static final int textView_Comments=0x7f080099;
         public static final int textView_commentName=0x7f080090;
         public static final int textView_date=0x7f080094;
         public static final int textView_like=0x7f080097;

@@ -26,10 +26,12 @@ namespace ListViewExercise
 
             List<Comment> commentList = new List<Comment>()
             {
-                new Comment()
-                {
-                }
+                new Comment(){Name="Tom",Text="this is the perfect comment"},
+                new Comment(){Name="Karr",Text="this is the a comment"},
+                new Comment(){Name="Plain",Text="this is second comment"}
             };
+
+            listView_comments.Adapter = new CommentAdapter(this, commentList);
         }
     }
 }

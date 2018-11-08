@@ -18,5 +18,7 @@ namespace ListViewExercise
         public string PostText { get; set; }
         public string Date { get; set; }
         public int Likes { get; set; }
+        public ImageView Avatar { get; set; }
+        public ImageView Image { get; set; }
     }
 }

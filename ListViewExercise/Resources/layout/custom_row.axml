@@ -31,10 +31,11 @@
 			<TextView
 				android:text="Date"
 				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="end"
 				android:id="@+id/textView_date"
-				android:layout_marginLeft="180.0dp" />
+				android:layout_marginLeft="212.5dp" />
 		</LinearLayout>
 		<TextView
 			android:text="Post Text"
@@ -65,12 +66,13 @@
 				android:id="@+id/imageButton_like"
 				android:scaleType="centerInside"
 				android:layout_marginBottom="0.0dp" />
-			<Button
-				android:text="Comments"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
-				android:id="@+id/button_comments"
-				android:layout_marginLeft="120.0dp" />
+			<TextView
+				android:text="0 Comments"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="end"
+				android:id="@+id/textView_Comments" />
 		</LinearLayout>
 		<ListView
 			android:minWidth="25px"

@@ -2390,9 +2390,6 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
 			
-			// aapt resource value: 0x7F020016
-			public const int button_comments = 2130837526;
-			
 			// aapt resource value: 0x7F0C001C
 			public const int cancel_action = 2131492892;
 			
@@ -2716,6 +2713,9 @@ namespace ListViewExercise
 			
 			// aapt resource value: 0x7F020007
 			public const int textView_commentName = 2130837511;
+			
+			// aapt resource value: 0x7F020016
+			public const int textView_Comments = 2130837526;
 			
 			// aapt resource value: 0x7F020011
 			public const int textView_date = 2130837521;

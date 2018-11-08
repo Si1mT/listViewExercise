@@ -769,7 +769,6 @@ int id beginning 0x7f08002f
 int id blocking 0x7f080057
 int id bottom 0x7f08003d
 int id buttonPanel 0x7f080063
-int id button_comments 0x7f080099
 int id cancel_action 0x7f0800ac
 int id center 0x7f080045
 int id center_horizontal 0x7f080046
@@ -895,6 +894,7 @@ int id text 0x7f08001a
 int id text2 0x7f08001b
 int id textSpacerNoButtons 0x7f08006a
 int id textSpacerNoTitle 0x7f080069
+int id textView_Comments 0x7f080099
 int id textView_commentName 0x7f080090
 int id textView_date 0x7f080094
 int id textView_like 0x7f080097

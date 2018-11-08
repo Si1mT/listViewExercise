@@ -50,12 +50,20 @@ namespace ListViewExercise
             View view = convertView;
             if (view == null)
                 view = context.LayoutInflater.Inflate(Resource.Layout.custom_row, null);
-            var imageButton_Like = view.FindViewById<ImageButton>(Resource.Id.imageButton_like);
+
+            ImageButton imageButton_Like = view.FindViewById<ImageButton>(Resource.Id.imageButton_like);
+            TextView textView_Comments = view.FindViewById<TextView>(Resource.Id.textView_Comments);
 
             view.FindViewById<TextView>(Resource.Id.textView_name).Text = posts[position].Name;
             view.FindViewById<TextView>(Resource.Id.textView_date).Text = posts[position].Date;
             view.FindViewById<TextView>(Resource.Id.textView_text).Text = posts[position].PostText;
             view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes+" Likes";
+
+            textView_Comments.Click += (sender, e) =>
+            {
+                var commentActivity = new Intent(context, typeof(CommentActivity));
+                context.StartActivity(commentActivity);
+            };
 
             imageButton_Like.Click += (sender, e) =>
              {

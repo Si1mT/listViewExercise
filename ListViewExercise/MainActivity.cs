@@ -21,7 +21,6 @@ namespace ListViewExercise
             SetContentView(Resource.Layout.activity_main);
 
             list = FindViewById<ListView>(Resource.Id.listView1);
-            //Button_Comments = FindViewById<Button>(Resource.Id.button_comments);
 
 
             List<Facebook> postList = new List<Facebook>() {
@@ -32,14 +31,6 @@ namespace ListViewExercise
 
             list.Adapter = new PostAdapter(this, postList);
 
-            //Button_Comments.Click += Comments_Click;
         }
-
-        //public void Comments_Click(object sender, EventArgs e)
-        //{
-        //    var CommentActivity = new Intent(this, typeof(CommentActivity));
-        //    StartActivity(CommentActivity);
-            
-        //}
     }
 }

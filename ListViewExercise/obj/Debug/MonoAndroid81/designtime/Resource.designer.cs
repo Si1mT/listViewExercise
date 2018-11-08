@@ -2477,8 +2477,11 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020015
-			public const int imageButton_like = 2130837525;
+			// aapt resource value: 0x7F020016
+			public const int imageButton_like = 2130837526;
+			
+			// aapt resource value: 0x7F020012
+			public const int imageView1 = 2130837522;
 			
 			// aapt resource value: 0x7F020006
 			public const int imageView_commentProfilePic = 2130837510;
@@ -2513,8 +2516,8 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F020005
 			public const int linearLayout2 = 2130837509;
 			
-			// aapt resource value: 0x7F020013
-			public const int linearLayout3 = 2130837523;
+			// aapt resource value: 0x7F020014
+			public const int linearLayout3 = 2130837524;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
@@ -2714,14 +2717,14 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F020007
 			public const int textView_commentName = 2130837511;
 			
-			// aapt resource value: 0x7F020016
-			public const int textView_Comments = 2130837526;
+			// aapt resource value: 0x7F020017
+			public const int textView_Comments = 2130837527;
 			
 			// aapt resource value: 0x7F020011
 			public const int textView_date = 2130837521;
 			
-			// aapt resource value: 0x7F020014
-			public const int textView_like = 2130837524;
+			// aapt resource value: 0x7F020015
+			public const int textView_like = 2130837525;
 			
 			// aapt resource value: 0x7F020010
 			public const int textView_name = 2130837520;
@@ -2729,8 +2732,8 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F020008
 			public const int textView_post = 2130837512;
 			
-			// aapt resource value: 0x7F020012
-			public const int textView_text = 2130837522;
+			// aapt resource value: 0x7F020013
+			public const int textView_text = 2130837523;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;

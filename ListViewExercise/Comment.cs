@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace ListViewExercise
 {
-    class Comment
+    class Comment : Facebook
     {
         public string Name { get; set; }
         public string Text { get; set; }

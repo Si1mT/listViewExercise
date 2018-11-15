@@ -24,8 +24,18 @@ namespace ListViewExercise
 
 
             List<Facebook> postList = new List<Facebook>() {
-                new Facebook(){Name="Bob",PostText="Jim please stop",Date="1. april,12:21",Likes=21},
-                new Facebook(){Name="Jim",PostText="| ||\n || |_",Date="1. april,12:00", Likes=1},
+                new Facebook()
+                { PostName="Bob",
+                  PostText ="Jim please stop",
+                  Date ="1. april,12:21",
+                  Likes =21,
+                  Comment=new Comment()
+                  {
+                      Name="Bob",
+                      PostText="hit or miss, i guess they never"
+                  },
+                },
+                new Facebook(){PostName="Jim",PostText="| ||\n || |_",Date="1. april,12:00", Likes=1},
 
             };
 

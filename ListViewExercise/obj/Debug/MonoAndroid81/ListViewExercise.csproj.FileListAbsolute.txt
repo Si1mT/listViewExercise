@@ -57,7 +57,6 @@ C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\Mo
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\linksrc\System.Runtime.Serialization.pdb
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\linksrc\System.ServiceModel.Internals.pdb
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\linksrc\Mono.Security.pdb
-C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\ListViewExercise.csprojAssemblyReference.cache
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\ListViewExercise.pdb
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\Mono.Android.pdb
 C:\Users\opilane\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\Mono.Security.pdb

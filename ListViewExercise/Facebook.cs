@@ -14,11 +14,12 @@ namespace ListViewExercise
 {
     class Facebook
     {
-        public string Name { get; set; }
+        public string PostName { get; set; }
         public string PostText { get; set; }
         public string Date { get; set; }
         public int Likes { get; set; }
         public ImageView Avatar { get; set; }
         public ImageView Image { get; set; }
+        public Comment Comment { get; set; }
     }
 }

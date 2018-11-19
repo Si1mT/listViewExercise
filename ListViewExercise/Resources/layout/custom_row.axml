@@ -18,16 +18,18 @@
 			android:layout_height="62.0dp"
 			android:id="@+id/linearLayout2">
 			<ImageView
-				android:src="@android:drawable/ic_menu_gallery"
-				android:layout_width="wrap_content"
+				android:src="@drawable/avatar"
+				android:layout_width="61.5dp"
 				android:layout_height="match_parent"
+				android:gravity=""
 				android:id="@+id/imageView_profilePicture" />
 			<TextView
 				android:text="Name"
 				android:textAppearance="?android:attr/textAppearanceLarge"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:id="@+id/textView_name" />
+				android:id="@+id/textView_name"
+				android:layout_marginLeft="12.5dp" />
 			<TextView
 				android:text="Date"
 				android:textAppearance="?android:attr/textAppearanceMedium"
@@ -37,11 +39,6 @@
 				android:id="@+id/textView_date"
 				android:layout_marginLeft="212.5dp" />
 		</LinearLayout>
-		<ImageView
-			android:src="@android:drawable/ic_menu_gallery"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/imageView1" />
 		<TextView
 			android:text="Post Text"
 			android:textAppearance="?android:attr/textAppearanceLarge"
@@ -49,6 +46,11 @@
 			android:layout_height="30.5dp"
 			android:id="@+id/textView_text"
 			android:layout_marginLeft="14.5dp" />
+		<ImageView
+			android:src="@android:drawable/ic_menu_gallery"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView_postImage" />
 		<LinearLayout
 			android:orientation="horizontal"
 			android:minWidth="25px"
@@ -79,11 +81,5 @@
 				android:gravity="end"
 				android:id="@+id/textView_Comments" />
 		</LinearLayout>
-		<ListView
-			android:minWidth="25px"
-			android:minHeight="25px"
-			android:layout_width="match_parent"
-			android:layout_height="111.5dp"
-			android:id="@+id/listView_Comments" />
 	</LinearLayout>
 </LinearLayout>

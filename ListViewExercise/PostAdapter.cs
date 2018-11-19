@@ -46,7 +46,7 @@ namespace ListViewExercise
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            bool liked=false;
+            bool liked = false;
             View view = convertView;
             if (view == null)
                 view = context.LayoutInflater.Inflate(Resource.Layout.custom_row, null);
@@ -54,11 +54,11 @@ namespace ListViewExercise
             ImageButton imageButton_Like = view.FindViewById<ImageButton>(Resource.Id.imageButton_like);
             TextView textView_Comments = view.FindViewById<TextView>(Resource.Id.textView_Comments);
 
-
             view.FindViewById<TextView>(Resource.Id.textView_name).Text = posts[position].PostName;
             view.FindViewById<TextView>(Resource.Id.textView_date).Text = posts[position].Date;
             view.FindViewById<TextView>(Resource.Id.textView_text).Text = posts[position].PostText;
-            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes+" Likes";
+            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
+           
             //avatar  view.FindViewById<ImageView>(Resource.Id.imageView_profilePicture) = posts[position].Avatar;
 
             textView_Comments.Click += (sender, e) =>
@@ -67,8 +67,7 @@ namespace ListViewExercise
                 context.StartActivity(commentActivity);
             };
 
-
-            imageButton_Like.Click += Like_Click;
+            imageButton_Like.Click +=(sender, e)=>
             {
 
                 switch (liked)
@@ -98,11 +97,6 @@ namespace ListViewExercise
             //position = (int)clicktextview.Tag;
             //clicktextview.FindViewById<TextView>(Resource.Id.imageButton_like);
             //
-        }
-
-        private void Like_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

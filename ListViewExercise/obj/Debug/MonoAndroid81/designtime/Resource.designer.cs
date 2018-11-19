@@ -2224,11 +2224,17 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F090053
 			public const int abc_vector_test = 2131296339;
 			
+			// aapt resource value: 0x7F010002
+			public const int avatar = 2130771970;
+			
 			// aapt resource value: 0x7F090054
 			public const int avd_hide_password = 2131296340;
 			
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
+			
+			// aapt resource value: 0x7F010003
+			public const int bike = 2130771971;
 			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
@@ -2248,8 +2254,8 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010002
-			public const int like = 2130771970;
+			// aapt resource value: 0x7F010004
+			public const int like = 2130771972;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
@@ -2295,6 +2301,9 @@ namespace ListViewExercise
 			
 			// aapt resource value: 0x7F09006A
 			public const int tooltip_frame_light = 2131296362;
+			
+			// aapt resource value: 0x7F010005
+			public const int tree = 2130771973;
 			
 			static Drawable()
 			{
@@ -2480,11 +2489,11 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F020016
 			public const int imageButton_like = 2130837526;
 			
-			// aapt resource value: 0x7F020012
-			public const int imageView1 = 2130837522;
-			
 			// aapt resource value: 0x7F020006
 			public const int imageView_commentProfilePic = 2130837510;
+			
+			// aapt resource value: 0x7F020013
+			public const int imageView_postImage = 2130837523;
 			
 			// aapt resource value: 0x7F020009
 			public const int imageView_profilePicture = 2130837513;
@@ -2732,8 +2741,8 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F020008
 			public const int textView_post = 2130837512;
 			
-			// aapt resource value: 0x7F020013
-			public const int textView_text = 2130837523;
+			// aapt resource value: 0x7F020012
+			public const int textView_text = 2130837522;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;

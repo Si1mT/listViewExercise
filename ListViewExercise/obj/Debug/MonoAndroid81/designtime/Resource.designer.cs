@@ -2399,6 +2399,9 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
 			
+			// aapt resource value: 0x7F020004
+			public const int button_Add_Post = 2130837508;
+			
 			// aapt resource value: 0x7F0C001C
 			public const int cancel_action = 2131492892;
 			
@@ -2486,17 +2489,17 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020016
-			public const int imageButton_like = 2130837526;
+			// aapt resource value: 0x7F020018
+			public const int imageButton_like = 2130837528;
 			
-			// aapt resource value: 0x7F020006
-			public const int imageView_commentProfilePic = 2130837510;
+			// aapt resource value: 0x7F020008
+			public const int imageView_commentProfilePic = 2130837512;
 			
-			// aapt resource value: 0x7F020013
-			public const int imageView_postImage = 2130837523;
+			// aapt resource value: 0x7F020015
+			public const int imageView_postImage = 2130837525;
 			
-			// aapt resource value: 0x7F020009
-			public const int imageView_profilePicture = 2130837513;
+			// aapt resource value: 0x7F020011
+			public const int imageView_profilePicture = 2130837521;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -2519,23 +2522,23 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C000F
 			public const int line3 = 2131492879;
 			
-			// aapt resource value: 0x7F020004
-			public const int linearLayout1 = 2130837508;
+			// aapt resource value: 0x7F020002
+			public const int linearLayout1 = 2130837506;
 			
-			// aapt resource value: 0x7F020005
-			public const int linearLayout2 = 2130837509;
+			// aapt resource value: 0x7F020007
+			public const int linearLayout2 = 2130837511;
 			
-			// aapt resource value: 0x7F020014
-			public const int linearLayout3 = 2130837524;
+			// aapt resource value: 0x7F020016
+			public const int linearLayout3 = 2130837526;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
 			
-			// aapt resource value: 0x7F020002
-			public const int listView1 = 2130837506;
+			// aapt resource value: 0x7F020005
+			public const int listView1 = 2130837509;
 			
-			// aapt resource value: 0x7F020003
-			public const int listView_Comments = 2130837507;
+			// aapt resource value: 0x7F020006
+			public const int listView_Comments = 2130837510;
 			
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
@@ -2711,6 +2714,9 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C0018
 			public const int text2 = 2131492888;
 			
+			// aapt resource value: 0x7F020003
+			public const int textInputEditText1 = 2130837507;
+			
 			// aapt resource value: 0x7F0C007E
 			public const int textinput_counter = 2131492990;
 			
@@ -2723,26 +2729,26 @@ namespace ListViewExercise
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
 			
-			// aapt resource value: 0x7F020007
-			public const int textView_commentName = 2130837511;
+			// aapt resource value: 0x7F020009
+			public const int textView_commentName = 2130837513;
+			
+			// aapt resource value: 0x7F020019
+			public const int textView_Comments = 2130837529;
+			
+			// aapt resource value: 0x7F020013
+			public const int textView_date = 2130837523;
 			
 			// aapt resource value: 0x7F020017
-			public const int textView_Comments = 2130837527;
-			
-			// aapt resource value: 0x7F020011
-			public const int textView_date = 2130837521;
-			
-			// aapt resource value: 0x7F020015
-			public const int textView_like = 2130837525;
-			
-			// aapt resource value: 0x7F020010
-			public const int textView_name = 2130837520;
-			
-			// aapt resource value: 0x7F020008
-			public const int textView_post = 2130837512;
+			public const int textView_like = 2130837527;
 			
 			// aapt resource value: 0x7F020012
-			public const int textView_text = 2130837522;
+			public const int textView_name = 2130837522;
+			
+			// aapt resource value: 0x7F020010
+			public const int textView_post = 2130837520;
+			
+			// aapt resource value: 0x7F020014
+			public const int textView_text = 2130837524;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;

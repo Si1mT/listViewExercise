@@ -82,17 +82,17 @@ namespace ListViewExercise
                 switch (liked)
                 {
                     case false:
-                        posts[position].Likes++;
-                        view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
+                        view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + 1 + " Likes";
                         liked = true;
+                        NotifyDataSetChanged();
                         break;
                     case true:
                         posts[position].Likes--;
-                        view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
-                        liked = true;
+                        view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes - 1 + " Likes";
+                        liked = false;
+                        NotifyDataSetChanged();
                         break;
-                    default:
-                        break;
+
                 }
             };
 

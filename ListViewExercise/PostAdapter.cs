@@ -58,9 +58,18 @@ namespace ListViewExercise
             view.FindViewById<TextView>(Resource.Id.textView_date).Text = posts[position].Date;
             view.FindViewById<TextView>(Resource.Id.textView_text).Text = posts[position].PostText;
             view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
-           
-            //avatar  view.FindViewById<ImageView>(Resource.Id.imageView_profilePicture) = posts[position].Avatar;
+            var postImage=view.FindViewById<ImageView>(Resource.Id.imageView_postImage);
 
+            if (posts[position].Image !=null)
+            {
+                postImage.SetImageResource(context.Resources.GetIdentifier(posts[position].Image, "drawable", context.PackageName));
+                postImage.Visibility = ViewStates.Visible;
+            }
+            else
+            {
+                postImage.Visibility = ViewStates.Gone;
+            }
+            
             textView_Comments.Click += (sender, e) =>
             {
                 var commentActivity = new Intent(context, typeof(CommentActivity));

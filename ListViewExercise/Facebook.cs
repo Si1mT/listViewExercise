@@ -19,7 +19,7 @@ namespace ListViewExercise
         public string Date { get; set; }
         public int Likes { get; set; }
         public ImageView Avatar { get; set; }
-        public ImageView Image { get; set; }
+        public string Image { get; set; }
         public Comment Comment { get; set; }
     }
 }

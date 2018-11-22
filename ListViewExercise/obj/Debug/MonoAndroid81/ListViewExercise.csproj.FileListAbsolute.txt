@@ -1,9 +1,9 @@
+C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\res.flag
+C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\ListViewExercise.csproj.CoreCompileInputs.cache
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\bin\Debug\ListViewExercise.dll
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\bin\Debug\ListViewExercise.pdb
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\bin\Debug\ListViewExercise.ListViewExercise.apk
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\bin\Debug\ListViewExercise.ListViewExercise-Signed.apk
-C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\res.flag
-C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\ListViewExercise.csproj.CoreCompileInputs.cache
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\ListViewExercise.dll
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\ListViewExercise.pdb
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\bin\ListViewExercise.ListViewExercise.apk
@@ -71,4 +71,4 @@ C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoA
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\System.Runtime.Serialization.pdb
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
-C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\ListViewExercise.csprojAssemblyReference.cache
+C:\Users\SIIM\Documents\GitHub\listViewExercise\ListViewExercise\obj\Debug\MonoAndroid81\linksrc\ListViewExercise.pdb

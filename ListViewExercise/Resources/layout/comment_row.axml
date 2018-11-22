@@ -21,8 +21,8 @@
 			android:layout_height="46.5dp"
 			android:id="@+id/linearLayout2" >
 			<ImageView
-				android:src="@android:drawable/ic_menu_gallery"
-				android:layout_width="wrap_content"
+				android:src="@drawable/avatar"
+				android:layout_width="47.5dp"
 				android:layout_height="match_parent"
 				android:id="@+id/imageView_commentProfilePic" />
 			<TextView

@@ -12,14 +12,15 @@ using Android.Widget;
 
 namespace ListViewExercise
 {
-    class Facebook
+    public class Facebook
     {
         public string PostName { get; set; }
         public string PostText { get; set; }
         public string Date { get; set; }
+        public bool IsLiked { get; set; }
         public int Likes { get; set; }
         public ImageView Avatar { get; set; }
         public string Image { get; set; }
-        public Comment Comment { get; set; }
+        public List<Comment> Comments { get; set; }
     }
 }

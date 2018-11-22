@@ -46,12 +46,11 @@ namespace ListViewExercise
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            bool liked = false;
             View view = convertView;
             if (view == null)
                 view = context.LayoutInflater.Inflate(Resource.Layout.custom_row, null);
 
-            ImageButton imageButton_Like = view.FindViewById<ImageButton>(Resource.Id.imageButton_like);
+            
             TextView textView_Comments = view.FindViewById<TextView>(Resource.Id.textView_Comments);
 
             view.FindViewById<TextView>(Resource.Id.textView_name).Text = posts[position].PostName;
@@ -76,25 +75,35 @@ namespace ListViewExercise
                 context.StartActivity(commentActivity);
             };
 
-            imageButton_Like.Click +=(sender, e)=>
-            {
+            ImageButton imageButton_Like = view.FindViewById<ImageButton>(Resource.Id.imageButton_like);
+            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
+            //Like button
+            imageButton_Like.Tag = position;
+            imageButton_Like.Click += LikeBtn_Click;
+            imageButton_Like.Click -= LikeBtn_Click;
 
-                switch (liked)
-                {
-                    case false:
-                        view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + 1 + " Likes";
-                        liked = true;
-                        NotifyDataSetChanged();
-                        break;
-                    case true:
-                        posts[position].Likes--;
-                        view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes - 1 + " Likes";
-                        liked = false;
-                        NotifyDataSetChanged();
-                        break;
 
-                }
-            };
+
+
+            //imageButton_Like.Click +=(sender, e)=>
+            //{
+
+            //    switch (liked)
+            //    {
+            //        case false:
+            //            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + 1 + " Likes";
+            //            liked = true;
+            //            NotifyDataSetChanged();
+            //            break;
+            //        case true:
+            //            posts[position].Likes--;
+            //            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes - 1 + " Likes";
+            //            liked = false;
+            //            NotifyDataSetChanged();
+            //            break;
+
+            //    }
+            //};
 
             return view;
             
@@ -106,6 +115,27 @@ namespace ListViewExercise
             //position = (int)clicktextview.Tag;
             //clicktextview.FindViewById<TextView>(Resource.Id.imageButton_like);
             //
+        }
+
+        private void LikeBtn_Click(object sender, EventArgs e)
+        {
+            var likeBtnClicked = (ImageButton)sender;
+            int position = (int)likeBtnClicked.Tag;
+
+            if (!posts[position].IsLiked)
+            {
+                posts[position].Likes++;
+            }
+            else
+            {
+                posts[position].Likes--;
+            }
+
+            MainActivity.postList[position].Likes = posts[position].Likes;
+            posts[position].IsLiked = !posts[position].IsLiked;
+
+            MainActivity.postList[position].IsLiked = posts[position].IsLiked;
+            NotifyDataSetChanged();
         }
     }
 }

@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace ListViewExercise
 {
-    class CommentAdapter : BaseAdapter<Comment>
+    class CommentAdapter : BaseAdapter<string>
     {
         List<Comment> comments;
         Activity context;
@@ -23,13 +23,9 @@ namespace ListViewExercise
             this.context = context;
         }
 
-
-        public override Comment this[int position]
+        public override string this[int position]
         {
-            get
-            {
-                return comments[position];
-            }
+            get { return comments[position].Name.ToString(); }
         }
 
         public override int Count
@@ -52,7 +48,7 @@ namespace ListViewExercise
                 view = context.LayoutInflater.Inflate(Resource.Layout.comment_row, null);
 
             view.FindViewById<TextView>(Resource.Id.textView_commentName).Text = comments[position].Name;
-            view.FindViewById<TextView>(Resource.Id.textView_post).Text = comments[position].Text;
+            view.FindViewById<TextView>(Resource.Id.textView_post).Text = comments[position].PostText;
 
             return view;
         }

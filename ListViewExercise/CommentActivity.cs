@@ -9,45 +9,42 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Newtonsoft.Json;
 
 namespace ListViewExercise
 {
     [Activity(Label = "CommentActivity")]
-    public class CommentActivity : Activity
+    public class CommentActivity : ListActivity
     {
-        ListView listView_comments;
         Button button_addComment;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            List<Comment> listView_Comments = JsonConvert.DeserializeObject<List<Comment>>(Intent.GetStringExtra("Comments"));
+
             SetContentView(Resource.Layout.comment_layout);
 
-            listView_comments = FindViewById<ListView>(Resource.Id.listView_Comments);
+            ListAdapter = new CommentAdapter(this, listView_Comments);
+
             button_addComment = FindViewById<Button>(Resource.Id.button_addComment);
-
-            //List<Comment> commentList = new List<Comment>()
-            //{
-            //    new Comment(){Name="Tom",Text="this is the perfect comment"},
-            //    new Comment(){Name="Karr",Text="this is the a comment"},
-            //    new Comment(){Name="Plain",Text="this is second comment"}
-            //};
-            
-            listView_comments.Adapter = new CommentAdapter(this, MainActivity.commentsList);
-
             button_addComment.Click += Button_addComment_Click;
         }
 
         private void Button_addComment_Click(object sender, EventArgs e)
         {
+            Button commentButton = (Button)sender;
+            int position = (int)commentButton.Tag;
             EditText AddCommentText = FindViewById<EditText>(Resource.Id.textInputEditText_addComment);
 
-            Comment NewComment = new Comment()
+            MainActivity.postList[position].Comments.Add(new Comment
             {
-                Name = "User",
-                Text = AddCommentText.Text,
-            };
-            MainActivity.commentsList.Add(NewComment);
+                Name = "TestUser",
+                PostText = AddCommentText.Text,
+            });
+            AddCommentText.Text = "";
+            ListAdapter = new CommentAdapter(this, MainActivity.postList[position].Comments);
         }
     }
 }

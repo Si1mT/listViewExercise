@@ -22,24 +22,22 @@ namespace ListViewExercise
 
             SetContentView(Resource.Layout.activity_main);
 
+            if (postList == null) TestPosts();
+
             ListView list = FindViewById<ListView>(Resource.Id.listView1);
             Button ButtonAddPost = FindViewById<Button>(Resource.Id.button_Add_Post);
 
+            ButtonAddPost.Click += AddPost_Button_Click;
+
+            list.Adapter = new PostAdapter(this, postList);
+        }
+
+        public void TestPosts()
+        {
             postList = new List<Facebook>();
             commentsList = new List<Comment>();
 
-            Facebook Post=new Facebook()
-            {
-                PostName = "Bob",
-                PostText = "lorem",
-                Date = "1. April,12:21",
-                Image = "bike",
-                Likes = 21,
-                Comments = commentsList
-            };
-            postList.Add(Post);
-
-            Comment Comment=new Comment()
+            Comment Comment = new Comment()
             {
                 Name = "tom",
                 PostText = "ipsum"
@@ -60,7 +58,20 @@ namespace ListViewExercise
             };
             commentsList.Add(Comment);
 
-            new Facebook()
+            Facebook Post = new Facebook()
+            {
+                PostName = "Bob",
+                PostText = "lorem",
+                Date = "1. April,12:21",
+                Image = "bike",
+                Likes = 21,
+                Comments = commentsList
+            };
+            postList.Add(Post);
+
+            commentsList = new List<Comment>();
+
+            Facebook Post1=new Facebook()
             {
                 PostName = "Jim",
                 PostText = "| ||" +
@@ -70,9 +81,18 @@ namespace ListViewExercise
                 Likes = 1,
                 Comments = commentsList
             };
-            postList.Add(Post);
+            postList.Add(Post1);
 
-            new Facebook()
+            commentsList = new List<Comment>();
+
+            Comment = new Comment()
+            {
+                Name = "bob",
+                PostText = "lorem"
+            };
+            commentsList.Add(Comment);
+
+            Facebook Post2=new Facebook()
             {
                 PostName = "Test",
                 PostText = "Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. " +
@@ -83,18 +103,7 @@ namespace ListViewExercise
                 Likes = 1,
                 Comments = commentsList
             };
-            postList.Add(Post);
-            
-            Comment=new Comment()
-            {
-                Name = "bob",
-                PostText = "lorem"
-            };
-            commentsList.Add(Comment);
-
-            ButtonAddPost.Click += AddPost_Button_Click;
-
-            list.Adapter = new PostAdapter(this, postList);
+            postList.Add(Post2);
         }
 
         public void AddPost_Button_Click(object sender, EventArgs e)

@@ -9,10 +9,11 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Newtonsoft.Json;
 
 namespace ListViewExercise
 {
-    class PostAdapter : BaseAdapter<Facebook>
+    class PostAdapter : BaseAdapter<string>
     {
         List<Facebook> posts;
         Activity context;
@@ -23,12 +24,16 @@ namespace ListViewExercise
             this.context = context;
         }
 
-        public override Facebook this[int position]
+        //public override Facebook this[int position]
+        //{
+        //    get
+        //    {
+        //        return posts[position];
+        //    }
+        //}
+        public override string this[int position]
         {
-            get
-            {
-                return posts[position];
-            }
+            get { return posts[position].PostName.ToString(); }
         }
 
         public override int Count
@@ -49,16 +54,14 @@ namespace ListViewExercise
             View view = convertView;
             if (view == null)
                 view = context.LayoutInflater.Inflate(Resource.Layout.custom_row, null);
-
             
-            TextView textView_Comments = view.FindViewById<TextView>(Resource.Id.textView_Comments);
-
+            view.FindViewById<TextView>(Resource.Id.textView_Comments).Text = posts[position].Comments.Count() + " Comments";
             view.FindViewById<TextView>(Resource.Id.textView_name).Text = posts[position].PostName;
             view.FindViewById<TextView>(Resource.Id.textView_date).Text = posts[position].Date;
             view.FindViewById<TextView>(Resource.Id.textView_text).Text = posts[position].PostText;
             view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
-            var postImage=view.FindViewById<ImageView>(Resource.Id.imageView_postImage);
 
+            var postImage=view.FindViewById<ImageView>(Resource.Id.imageView_postImage);
             if (posts[position].Image !=null)
             {
                 postImage.SetImageResource(context.Resources.GetIdentifier(posts[position].Image, "drawable", context.PackageName));
@@ -68,56 +71,33 @@ namespace ListViewExercise
             {
                 postImage.Visibility = ViewStates.Gone;
             }
-            
-            textView_Comments.Click += (sender, e) =>
-            {
-                var commentActivity = new Intent(context, typeof(CommentActivity));
-                context.StartActivity(commentActivity);
-            };
 
             ImageButton imageButton_Like = view.FindViewById<ImageButton>(Resource.Id.imageButton_like);
             view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + " Likes";
-            //Like button
             imageButton_Like.Tag = position;
-            imageButton_Like.Click += LikeBtn_Click;
-            imageButton_Like.Click -= LikeBtn_Click;
+            imageButton_Like.Click -= LikeButton_Click;
+            imageButton_Like.Click += LikeButton_Click;
 
-
-
-
-            //imageButton_Like.Click +=(sender, e)=>
-            //{
-
-            //    switch (liked)
-            //    {
-            //        case false:
-            //            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes + 1 + " Likes";
-            //            liked = true;
-            //            NotifyDataSetChanged();
-            //            break;
-            //        case true:
-            //            posts[position].Likes--;
-            //            view.FindViewById<TextView>(Resource.Id.textView_like).Text = posts[position].Likes - 1 + " Likes";
-            //            liked = false;
-            //            NotifyDataSetChanged();
-            //            break;
-
-            //    }
-            //};
+            TextView textView_Comments = view.FindViewById<TextView>(Resource.Id.textView_Comments);
+            textView_Comments.Tag = position;
+            textView_Comments.Click -= CommentsClick;
+            textView_Comments.Click += CommentsClick;
 
             return view;
-            
-            //Possible hint on how to fix like button
-
-            //var clicktextview = (TextView)sender;
-            //clicktextview.Tag = position;
-            
-            //position = (int)clicktextview.Tag;
-            //clicktextview.FindViewById<TextView>(Resource.Id.imageButton_like);
-            //
         }
 
-        private void LikeBtn_Click(object sender, EventArgs e)
+        private void CommentsClick(object sender, EventArgs e)
+        {
+            TextView clickedCommentsButton = (TextView)sender;
+            int position = (int)clickedCommentsButton.Tag;
+
+            Intent commentsActivity = new Intent(context, typeof(CommentActivity));
+            commentsActivity.PutExtra("Comments", JsonConvert.SerializeObject(posts[position].Comments));
+            commentsActivity.PutExtra("PostPosition", position);
+            context.StartActivity(commentsActivity);
+        }
+
+        private void LikeButton_Click(object sender, EventArgs e)
         {
             var likeBtnClicked = (ImageButton)sender;
             int position = (int)likeBtnClicked.Tag;

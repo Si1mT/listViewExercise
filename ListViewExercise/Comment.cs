@@ -15,6 +15,6 @@ namespace ListViewExercise
     public class Comment : Facebook
     {
         public string Name { get; set; }
-        public string PostText { get; set; }
+        public string CommentText { get; set; }
     }
 }

@@ -48,7 +48,7 @@ namespace ListViewExercise
                 view = context.LayoutInflater.Inflate(Resource.Layout.comment_row, null);
 
             view.FindViewById<TextView>(Resource.Id.textView_commentName).Text = comments[position].Name;
-            view.FindViewById<TextView>(Resource.Id.textView_post).Text = comments[position].PostText;
+            view.FindViewById<TextView>(Resource.Id.textView_post).Text = comments[position].CommentText;
 
             return view;
         }

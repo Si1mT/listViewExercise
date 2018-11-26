@@ -40,21 +40,21 @@ namespace ListViewExercise
             Comment Comment = new Comment()
             {
                 Name = "tom",
-                PostText = "ipsum"
+                CommentText = "ipsum"
             };
             commentsList.Add(Comment);
 
             Comment = new Comment()
             {
                 Name = "tom",
-                PostText = "comment 1"
+                CommentText = "comment 1"
             };
             commentsList.Add(Comment);
 
             Comment = new Comment()
             {
                 Name = "tom 2",
-                PostText = "comment 2"
+                CommentText = "comment 2"
             };
             commentsList.Add(Comment);
 
@@ -88,7 +88,7 @@ namespace ListViewExercise
             Comment = new Comment()
             {
                 Name = "bob",
-                PostText = "lorem"
+                CommentText = "lorem"
             };
             commentsList.Add(Comment);
 
@@ -120,6 +120,7 @@ namespace ListViewExercise
                 Likes = 0
             };
             postList.Add(NewPost);
+            AddPostText.Text = "";
 
             //Dismiss Keyboard
             InputMethodManager inputManager = (InputMethodManager)this.GetSystemService(Context.InputMethodService);

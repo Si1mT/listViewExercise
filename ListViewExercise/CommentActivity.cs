@@ -41,7 +41,7 @@ namespace ListViewExercise
             MainActivity.postList[position].Comments.Add(new Comment
             {
                 Name = "TestUser",
-                PostText = AddCommentText.Text,
+                CommentText = AddCommentText.Text,
             });
             AddCommentText.Text = "";
             ListAdapter = new CommentAdapter(this, MainActivity.postList[position].Comments);
